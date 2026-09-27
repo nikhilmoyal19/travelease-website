@@ -1,0 +1,461 @@
+
+html {
+    scroll-behavior: 80px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+/* Header */
+
+header {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b3d91;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #083076;
+    background-color: #eaf2ff;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eaf2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0b3d91;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #082f70;
+}
+
+
+/* Services */
+
+.services {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #0b3d91;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .services {
+        padding: 50px 20px;
+    }
+}
+
+
+
+
+.flight-btn {
+    background-color: #25D366;
+    transition: all 0.3s ease;
+}
+
+.flight-btn:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flight Page */
+
+.flight-page {
+    min-height: 650px;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #eaf2ff, #ffffff);
+}
+
+.flight-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.flight-content h1 {
+    font-size: 46px;
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.flight-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* Flight Cards */
+
+.flight-services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.flight-card {
+    background-color: white;
+    width: 310px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.flight-card h3 {
+    color: #0b3d91;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.flight-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Flight Enquiry */
+
+.flight-enquiry {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.flight-enquiry h2 {
+    color: #0b3d91;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.flight-enquiry p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.flight-enquiry .btn {
+    margin-top: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .flight-page {
+        padding: 50px 20px;
+    }
+
+    .flight-content h1 {
+        font-size: 36px;
+    }
+
+    .flight-intro {
+        font-size: 16px;
+    }
+
+    .flight-card {
+        width: 100%;
+    }
+
+    .flight-enquiry {
+        padding: 30px 20px;
+    }
+
+}
+
+
+
+
+/* About Section */
+
+.about {
+    padding: 80px 60px;
+    background-color: #f5f7fb;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    flex: 1;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box h3 {
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: #555;
+    margin: 15px 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    background-color: #f5f7fb;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+}
+
+
+/* Mobile Contact */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+}
